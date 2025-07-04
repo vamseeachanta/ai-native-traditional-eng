@@ -49,6 +49,12 @@ This repository is organized to provide comprehensive guidance and resources for
 - `/utils/` - Utility functions, data processing, validation helpers
 - `/domains/` - Domain-specific code modules (mechanical, electrical, civil, chemical)
 
+### `/mcp/`
+**Model Context Protocol servers and integrations**
+- `/servers/` - MCP server implementations for engineering tools (CAD, FEA, databases)
+- `/examples/` - Practical MCP integration examples and use cases
+- `/configs/` - Configuration templates and deployment examples
+
 ### `/tools/`
 **Utilities and automation scripts**
 - `/assessment/` - Readiness assessments and capability maturity models

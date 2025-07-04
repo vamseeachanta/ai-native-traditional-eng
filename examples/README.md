@@ -34,29 +34,33 @@ Domain-specific code examples and practical implementations of AI-native enginee
 - Collaborative engineering agents
 - Real-time monitoring and optimization agents
 
-## Code Structure
+## Model Context Protocol (MCP) Integration
 
-Each domain folder contains:
-- `notebooks/` - Jupyter notebooks with step-by-step examples
-- `scripts/` - Standalone Python/R scripts
-- `agents/` - AI agent implementations and configurations
-- `data/` - Sample datasets for testing
-- `models/` - Pre-trained models and configurations
-- `src/` - Reusable source code modules and libraries
-- `README.md` - Domain-specific guidance
+AI assistants can be seamlessly integrated with your existing engineering tools through the Model Context Protocol. See the **[mcp/](../mcp/)** folder for:
 
-**Note:** Core reusable code is organized in the main `/src/` folder for consistency across domains.
+- **MCP Servers** - Connect AI to CAD, FEA, and database systems
+- **Configuration Examples** - Ready-to-use configs for different engineering environments  
+- **Integration Guides** - Step-by-step setup for popular engineering tools
+- **Security Best Practices** - Safe deployment in engineering environments
 
-## Getting Started
+### Quick MCP Examples
 
-1. Choose your engineering domain
-2. Review the domain README for prerequisites
-3. Follow the notebooks for guided examples
-4. Adapt scripts for your specific use cases
+**CAD Integration:**
+```python
+# AI can read and modify your SolidWorks models
+mcp_client.call_tool("solidworks", "get_parameters", {"model": "bracket.sldprt"})
+```
 
-## Requirements
+**Material Database Access:**
+```python
+# AI can query your material databases
+materials = mcp_client.call_tool("database", "find_materials", {"strength": ">250MPa"})
+```
 
-- Python 3.8+
-- Domain-specific libraries (listed in each folder)
-- Sample data (provided or downloadable)
-- GPU recommended for training examples
+**Analysis Automation:**
+```python
+# AI can set up and run FEA analysis
+analysis = mcp_client.call_tool("ansys", "run_analysis", {"model": "bracket.step"})
+```
+
+See **[mcp/README.md](../mcp/README.md)** for complete implementation details.
