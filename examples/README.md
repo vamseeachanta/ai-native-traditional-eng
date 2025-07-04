@@ -42,7 +42,10 @@ Each domain folder contains:
 - `agents/` - AI agent implementations and configurations
 - `data/` - Sample datasets for testing
 - `models/` - Pre-trained models and configurations
+- `src/` - Reusable source code modules and libraries
 - `README.md` - Domain-specific guidance
+
+**Note:** Core reusable code is organized in the main `/src/` folder for consistency across domains.
 
 ## Getting Started
 

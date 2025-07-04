@@ -41,6 +41,14 @@ This repository is organized to provide comprehensive guidance and resources for
 - `/monitoring/` - Equipment health monitoring, quality control, performance tracking
 - `/collaboration/` - Documentation agents, knowledge management, project coordination
 
+### `/src/`
+**Reusable source code libraries and core framework**
+- `/core/` - Base classes, configuration management, logging utilities
+- `/agents/` - Agent implementation modules and communication protocols
+- `/integrations/` - Third-party system APIs (CAD, analysis tools, cloud platforms)
+- `/utils/` - Utility functions, data processing, validation helpers
+- `/domains/` - Domain-specific code modules (mechanical, electrical, civil, chemical)
+
 ### `/tools/`
 **Utilities and automation scripts**
 - `/assessment/` - Readiness assessments and capability maturity models

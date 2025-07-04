@@ -24,6 +24,7 @@ This repository provides comprehensive resources for implementing AI-native engi
 - **📖 [case-studies/](case-studies/)** - Real-world implementation examples and lessons learned
 - **💻 [examples/](examples/)** - Code examples by engineering domain (mechanical, electrical, civil, chemical)
 - **🤖 [agents/](agents/)** - AI agents for design, analysis, optimization, and collaboration
+- **⚙️ [src/](src/)** - Reusable source code libraries and core framework components
 - **🛠️ [tools/](tools/)** - Utilities for assessment, automation, and integration
 - **📋 [templates/](templates/)** - Project templates and starting points
 - **📚 [resources/](resources/)** - Training materials and additional references
