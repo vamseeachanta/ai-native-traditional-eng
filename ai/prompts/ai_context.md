@@ -14,7 +14,7 @@ Generate ai context file based on following repository Q&A
   - Developer environment setup (e.g., uv use, pyenv use, which compilers work)
   - Any unexpected behaviors or warnings particular to the project
   - Other information ai engine should remember
-
+- Avoid making duplicates across repositories. Use existing references (_*_filename*_) between repositories as much as possible
 
 # Workflow
 - Be sure to typecheck when you’re done making a series of code changes

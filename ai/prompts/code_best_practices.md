@@ -15,5 +15,5 @@
 
 
 - General Code Best Practices for new code:
-  - see ai/prompts/general_code_best_practices.md
+  - see ai/prompts/_code_best_practices_general.md
 
