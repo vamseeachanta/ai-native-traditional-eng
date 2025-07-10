@@ -1,0 +1,11 @@
+- Task Understanding & Planning
+- Fault Localization
+- Editing Code
+- Validation
+- Iterate if Necessary
+- Documentation
+- Review & Finalize
+- Deployment
+- Post-Deployment Monitoring
+- Feedback Gathering
+- Continuous Improvement
