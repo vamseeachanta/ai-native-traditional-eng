@@ -2,17 +2,58 @@
 > Moving Beyond Vibe Coding to Systematic AI Development
 
 ## Table of Contents
-- [Executive Summary](#executive-summary)
-- [The Problem: Vibe Coding](#the-problem-vibe-coding)
-- [The Solution: Context Engineering](#the-solution-context-engineering)
-- [Core Principles](#core-principles)
-- [Implementation Framework](#implementation-framework)
-- [Practical Workflow](#practical-workflow)
-- [Tools and Templates](#tools-and-templates)
-- [Best Practices](#best-practices)
-- [Future Directions](#future-directions)
-- [Conclusion](#conclusion)
-- [References and Resources](#references-and-resources)
+- [Context Engineering: The Complete Guide](#context-engineering-the-complete-guide)
+  - [Table of Contents](#table-of-contents)
+  - [Executive Summary](#executive-summary)
+  - [The Problem: Vibe Coding](#the-problem-vibe-coding)
+    - [Definition](#definition)
+    - [Why It Fails](#why-it-fails)
+    - [The Dopamine Trap](#the-dopamine-trap)
+  - [The Solution: Context Engineering](#the-solution-context-engineering)
+    - [Definition](#definition-1)
+    - [Context Engineering vs. Prompt Engineering](#context-engineering-vs-prompt-engineering)
+    - [Key Components](#key-components)
+  - [Core Principles](#core-principles)
+    - [1. Context as Infrastructure](#1-context-as-infrastructure)
+    - [2. The Abraham Lincoln Principle](#2-the-abraham-lincoln-principle)
+    - [3. Systematic Validation](#3-systematic-validation)
+    - [4. Comprehensive Documentation](#4-comprehensive-documentation)
+  - [Implementation Framework](#implementation-framework)
+    - [Directory Structure](#directory-structure)
+    - [Key Files Explained](#key-files-explained)
+      - [CLAUDE.md - Global Rules](#claudemd---global-rules)
+      - [INITIAL.md - Feature Request Template](#initialmd---feature-request-template)
+      - [PRP (Product Requirements Prompt)](#prp-product-requirements-prompt)
+  - [Practical Workflow](#practical-workflow)
+    - [Phase 1: Context Preparation](#phase-1-context-preparation)
+    - [Phase 2: Feature Specification](#phase-2-feature-specification)
+    - [Phase 3: Implementation](#phase-3-implementation)
+    - [Phase 4: Validation](#phase-4-validation)
+  - [Tools and Templates](#tools-and-templates)
+    - [Custom Commands](#custom-commands)
+      - [`/generate-prp`](#generate-prp)
+      - [`/execute-prp`](#execute-prp)
+    - [PRP Template Structure](#prp-template-structure)
+  - [Best Practices](#best-practices)
+    - [1. Be Specific in Requirements](#1-be-specific-in-requirements)
+    - [2. Leverage Examples Extensively](#2-leverage-examples-extensively)
+    - [3. Include Comprehensive Documentation](#3-include-comprehensive-documentation)
+    - [4. Design for Iteration](#4-design-for-iteration)
+    - [5. Maintain Context Quality](#5-maintain-context-quality)
+  - [Future Directions](#future-directions)
+    - [Emerging Patterns](#emerging-patterns)
+    - [Industry Adoption](#industry-adoption)
+  - [Conclusion](#conclusion)
+  - [References and Resources](#references-and-resources)
+    - [Github Repositories](#github-repositories)
+    - [Primary Sources](#primary-sources)
+    - [Key Articles and Blog Posts](#key-articles-and-blog-posts)
+    - [Research and Theory](#research-and-theory)
+    - [Industry Resources](#industry-resources)
+    - [Key Quotes and Attributions](#key-quotes-and-attributions)
+    - [Community Resources](#community-resources)
+    - [Tools and Frameworks](#tools-and-frameworks)
+    - [Additional Learning](#additional-learning)
 
 ## Executive Summary
 
@@ -303,6 +344,16 @@ The investment in context preparation pays exponential dividends in implementati
 *"Context engineering is the delicate art and science of filling the context window with just the right information for the next step."* - Andrej Karpathy
 
 ## References and Resources
+
+### Github Repositories
+
+1. **context-engineering**: [GitHub Repository](https://github.com/yourusername/context-engineering)
+   - A collection of context engineering examples and best practices
+   - Community contributions and discussions
+
+2. **context-optimization**: [GitHub Repository](https://github.com/yourusername/context-optimization)
+   - Tools and techniques for optimizing context windows
+   - Performance benchmarks and case studies
 
 ### Primary Sources
 1. **Video**: [Context Engineering is the New Vibe Coding (Learn this Now)](https://www.youtube.com/watch?v=Egeuql3Lrzg)
