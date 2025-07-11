@@ -65,6 +65,7 @@ Context Engineering represents a paradigm shift in AI-assisted development, movi
 - Intuition may not be able to create repeatable solution paths, repeatable outcomes, or scalable solutions.
 - Rather than relying on intuition, Organization and Structure easily scales and optimizes.
 - Bring work (Research, coding etc.) to an AI ecosystem (IDE, Documentation, context, task based prompts etc.) that is designed to be used by AI assistants.
+- To learn context engineering, use simpler AI model before using powerful models to learn context. A power AI engine can pamper user to not think contextually, leading to bad habits!
 
 ## The Problem: Vibe Coding
 
