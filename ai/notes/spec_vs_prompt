@@ -1,0 +1,57 @@
+Here's the key difference between Specs and Project Requirement Prompts (PRPs):
+Specifications (Specs)
+Traditional software documentation
+AspectSpecificationsPurposeDefine WHAT needs to be builtAudienceHuman developers, stakeholders, QAFormatStructured documents with sectionsContentRequirements, acceptance criteria, technical detailsUsageReference during development, testing, reviewsExamplesAPI specs, feature specs, system requirements
+markdown# User Authentication Specification
+
+## Requirements
+- Users must authenticate with email/password
+- Session timeout after 30 minutes
+- Support OAuth providers (Google, GitHub)
+
+## Acceptance Criteria
+- [ ] Login form validates input
+- [ ] Invalid credentials show error message
+- [ ] Successful login redirects to dashboard
+Project Requirement Prompts (PRPs)
+AI-optimized instructions
+AspectProject Requirement PromptsPurposeTell AI HOW to build somethingAudienceAI assistants (Claude, GPT, etc.)FormatStructured prompts with commandsContentStep-by-step instructions, context, constraintsUsageInput for AI coding sessionsExamplesFeature implementation prompts, workflow automation
+markdown# PRP: Implement User Authentication
+
+## Context
+Python Flask app with SQLAlchemy, using JWT tokens
+
+## Implementation Steps
+- [ ] Create User model with email/password fields
+- [ ] Add password hashing with bcrypt
+- [ ] Implement login/logout routes
+- [ ] Add JWT token generation/validation middleware
+
+## Constraints
+- Follow existing code patterns in auth/
+- Use current database schema
+- Maintain backward compatibility
+
+## Quality Gates
+- All tests pass
+- Code coverage > 90%
+- Follow PEP 8 style guide
+Key Differences:
+SpecsPRPsTargetHuman-readableAI-executableStyleDescriptiveImperativeDetailWhat & WhyHow & WhenStructureRequirements focusAction-orientedValidationManual reviewAutomated execution
+When to Use Each:
+Use Specs for:
+
+Stakeholder communication
+Project planning
+Compliance documentation
+Long-term reference
+
+Use PRPs for:
+
+AI-assisted development
+Automated code generation
+Workflow automation
+Rapid prototyping
+
+Best Practice:
+Keep both! Start with traditional specs for planning, then create PRPs for AI implementation. This gives you human-readable documentation AND AI-executable instructions.
