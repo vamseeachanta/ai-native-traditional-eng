@@ -1,6 +1,0 @@
-- [ ] Convert scanned pdf document to markdown
-- [ ] Review and edit markdown for accuracy
-- [ ] Create summary section of key points impacting stakeholders
-  - [ ] create subsection and group bullet points for each stakeholder
-  - [ ] From a typical lease agreement, 
-- [ ] Create a table of contents for easy navigation
