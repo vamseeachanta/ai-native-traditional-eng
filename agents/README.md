@@ -1,158 +1,119 @@
-# AI Agents for Traditional Engineering
+# AI Agents Library
 
-Autonomous and semi-autonomous AI agents designed to assist with various engineering tasks and workflows.
+This folder contains specialized AI agents for various development tasks.
+Agents are sourced from AITmpl and Claude Code Templates.
 
-## Agent Categories
+## Folder Structure
 
-### Design Agents (`/design/`)
-Intelligent agents that assist with engineering design processes:
-- **CAD Design Agent** - Automated 3D modeling and design generation
-- **Requirements Analysis Agent** - Natural language processing for design requirements
-- **Design Review Agent** - Automated design validation and feedback
-- **Generative Design Agent** - Multi-objective optimization and design exploration
+```
+agents/
+├── security/          # Security audit and penetration testing
+├── performance/       # Performance optimization agents
+├── testing/          # Test generation and E2E testing
+├── documentation/    # API and code documentation
+├── devops/          # CI/CD and infrastructure
+├── data/            # Data engineering and ETL
+└── code_quality/    # Code review and refactoring
+```
 
-### Analysis Agents (`/analysis/`)
-Agents specialized in engineering analysis and simulation:
-- **FEA Analysis Agent** - Automated finite element analysis workflows
-- **Structural Assessment Agent** - Building and infrastructure health monitoring
-- **Thermal Analysis Agent** - Heat transfer and thermal system optimization
-- **Risk Assessment Agent** - Safety and reliability analysis automation
+## Usage
 
-### Optimization Agents (`/optimization/`)
-Multi-objective optimization and decision-making agents:
-- **Process Optimization Agent** - Manufacturing and chemical process improvement
-- **Resource Allocation Agent** - Project and resource planning optimization
-- **Energy Efficiency Agent** - Power system and energy usage optimization
-- **Cost Optimization Agent** - Budget and cost-effectiveness analysis
+### Automatic Agent Selection
 
-### Monitoring Agents (`/monitoring/`)
-Real-time monitoring and predictive maintenance agents:
-- **Equipment Health Agent** - Predictive maintenance and fault detection
-- **Quality Control Agent** - Automated inspection and quality assurance
-- **Performance Monitoring Agent** - System performance tracking and alerting
-- **Environmental Monitoring Agent** - Compliance and environmental impact tracking
+Agents are automatically selected based on your current task:
 
-### Collaboration Agents (`/collaboration/`)
-Agents that facilitate team collaboration and knowledge management:
-- **Documentation Agent** - Automated technical documentation generation
-- **Knowledge Management Agent** - Information retrieval and knowledge sharing
-- **Project Coordination Agent** - Task scheduling and team coordination
-- **Communication Agent** - Multi-language translation and technical communication
-
-## Agent Architecture
-
-### Core Components
-- **Perception Module** - Data ingestion and preprocessing
-- **Reasoning Engine** - Decision-making and problem-solving logic
-- **Action Interface** - Integration with engineering tools and systems
-- **Learning Module** - Continuous improvement and adaptation
-- **Communication Layer** - Human and agent interaction protocols
-
-### Technology Stack
-- **LangChain/LangGraph** - Agent orchestration and workflow management
-- **OpenAI/Anthropic APIs** - Large language model integration
-- **Vector Databases** - Knowledge storage and retrieval
-- **Engineering APIs** - CAD, FEA, and simulation tool integration
-- **Monitoring Tools** - Performance tracking and logging
-
-## Getting Started
-
-### Prerequisites
 ```bash
-pip install langchain langgraph openai anthropic
-pip install pandas numpy scipy matplotlib
-pip install engineering-specific-libraries  # See domain folders
+# During spec creation
+/spec create api-gateway  # Automatically uses API Security Agent
+
+# During testing
+/test generate  # Uses Test Generation Agent
+
+# During optimization
+/project optimize  # Uses Performance Optimization Agents
 ```
 
-### Basic Agent Setup
-1. **Choose an agent type** based on your engineering needs
-2. **Configure environment** with API keys and tool access
-3. **Initialize agent** with domain-specific knowledge base
-4. **Test with sample tasks** before production deployment
-5. **Monitor and refine** agent performance over time
+### Manual Agent Usage
 
-### Example Agent Workflow
-```python
-from agents.design import CADDesignAgent
+```bash
+# List all available agents
+/ai-agent list
 
-# Initialize agent with engineering knowledge
-agent = CADDesignAgent(
-    model="gpt-4",
-    tools=["solidworks_api", "ansys_api"],
-    knowledge_base="mechanical_engineering"
-)
+# Get recommendations for current context
+/ai-agent recommend
 
-# Process design request
-result = agent.process_request(
-    "Design a lightweight bracket for 500N load with safety factor 2.5"
-)
+# Use specific agent
+/ai-agent use "API Security Audit Agent"
 
-# Review and iterate
-design = agent.generate_design(result.requirements)
-analysis = agent.analyze_design(design)
-optimized = agent.optimize_design(design, analysis)
+# Get agent information
+/ai-agent info "Test Generation Agent"
 ```
 
-## Agent Capabilities
+## Available Agents by Category
 
-### Autonomous Functions
-- **Data Collection** - Automated gathering of engineering data
-- **Analysis Execution** - Running simulations and calculations
-- **Report Generation** - Creating technical documentation
-- **Alert Management** - Monitoring and notification systems
+### 🔒 Security
+- API Security Audit Agent
+- Penetration Testing Agent
+- Vulnerability Scanner Agent
 
-### Interactive Functions
-- **Design Assistance** - Collaborative design and review
-- **Problem Solving** - Engineering troubleshooting and guidance
-- **Knowledge Queries** - Technical information retrieval
-- **Process Guidance** - Step-by-step engineering workflows
+### ⚡ Performance
+- React Performance Optimization Agent
+- Database Optimization Agent
+- Bundle Size Analyzer Agent
 
-## Deployment Options
+### 🧪 Testing
+- Test Generation Agent
+- E2E Testing Agent
+- Coverage Analysis Agent
 
-### Local Deployment
-- Run agents on local machines for sensitive projects
-- Full control over data and processing
-- Suitable for small teams and prototyping
+### 📚 Documentation
+- API Documentation Agent
+- Code Documentation Agent
+- README Generator Agent
 
-### Cloud Deployment
-- Scalable deployment using cloud platforms
-- Shared resources and collaborative features
-- Enterprise-grade security and compliance
+### 🔧 DevOps
+- CI/CD Pipeline Agent
+- Infrastructure as Code Agent
+- Docker Configuration Agent
 
-### Hybrid Deployment
-- Critical processing on-premises
-- Non-sensitive tasks in the cloud
-- Balanced approach for security and scalability
+### 📊 Data
+- ETL Pipeline Agent
+- Data Analysis Agent
+- Data Validation Agent
+
+### ✨ Code Quality
+- Code Review Agent
+- Refactoring Agent
+- Best Practices Agent
+
+## Integration Points
+
+Agents integrate with these commands:
+- `/spec create` - Automatic agent recommendations
+- `/task execute` - Agent assistance during implementation
+- `/test run` - Testing agents for quality assurance
+- `/project optimize` - Performance agents
+- `/git commit` - Code review agents
 
 ## Best Practices
 
-### Agent Design
-- **Single Responsibility** - Each agent focused on specific engineering tasks
-- **Modular Architecture** - Reusable components across agents
-- **Human Oversight** - Critical decisions require human approval
-- **Continuous Learning** - Agents improve through usage and feedback
+1. **Let agents recommend themselves** - The system knows which agents to use
+2. **Chain agents for better results** - Use multiple agents in sequence
+3. **Review agent suggestions** - Don't apply blindly
+4. **Customize for your project** - Adapt agent outputs to your standards
+5. **Share improvements** - Contribute agent enhancements back
 
-### Safety and Reliability
-- **Validation Layers** - Multiple checks before action execution
-- **Rollback Mechanisms** - Ability to undo agent actions
-- **Audit Trails** - Complete logging of agent decisions and actions
-- **Performance Monitoring** - Real-time tracking of agent effectiveness
+## Adding Custom Agents
 
-### Integration
-- **API Standards** - Consistent interfaces across engineering tools
-- **Data Formats** - Standardized data exchange protocols
-- **Authentication** - Secure access to engineering systems
-- **Version Control** - Agent configuration and model versioning
+To add your own agents:
 
-## Contributing
+1. Create agent file in appropriate category folder
+2. Follow the agent template structure
+3. Update this README with agent details
+4. Test agent integration
 
-When developing new agents:
-1. **Define clear scope** - Specific engineering problems to solve
-2. **Design modular components** - Reusable across different agents
-3. **Include comprehensive testing** - Unit tests and integration tests
-4. **Document thoroughly** - Usage examples and configuration options
-5. **Follow security best practices** - Data protection and access control
+## Resources
 
----
-
-*AI agents represent the next evolution in engineering automation, providing intelligent assistance while maintaining human oversight and control.*
+- AITmpl: https://www.aitmpl.com/
+- Claude Code Templates: https://github.com/davila7/claude-code-templates
+- Agent Catalog: .agent-os/resources/aitmpl_agents_catalog.yaml

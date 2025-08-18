@@ -24,45 +24,45 @@ classifiers = [
 ]
 
 dependencies = [
-    "assetutilities"
-    "bs4"
-    "build"
-    "bumpver"
-    "chardet"
-    "crochet"
-    "deepdiff"
-    "excel2img"
-    "excel2img; sys_platform == 'win32'"
-    "fake_headers"
-    "flask"
-    "gitpython==3.1.31"
-    "jinja2"
-    "loguru"
-    "matplotlib"
-    "numpy"
-    "openpyxl"
-    "pandas"
-    "pandoc"
-    "parsel"
-    "plantuml"
-    "playwright"
-    "plotly"
-    "PyPDF2"
-    "pytest"
-    "python-certifi-win32"
-    "python-docx"
-    "pyyaml"
-    "ruamel.yaml"
-    "ruff"
-    "scrapy==2.12"
-    "selenium"
-    "sympy>=1.13.3"
-    "tabula"
-    "twine"
-    "undetected-chromedriver "
-    "utm"
-    "webcolors"
-    "wkhtmltopdf"
+    "assetutilities",
+    "bs4",
+    "build",
+    "bumpver",
+    "chardet",
+    "crochet",
+    "deepdiff",
+    "excel2img",
+    "excel2img; sys_platform=='win32'",
+    "fake_headers",
+    "flask",
+    "gitpython==3.1.31",
+    "jinja2",
+    "loguru",
+    "matplotlib",
+    "numpy",
+    "openpyxl",
+    "pandas",
+    "pandoc",
+    "parsel",
+    "plantuml",
+    "playwright",
+    "plotly",
+    "PyPDF2",
+    "pytest",
+    "python-certifi-win32",
+    "python-docx",
+    "pyyaml",
+    "ruamel.yaml",
+    "ruff",
+    "scrapy==2.12",
+    "selenium",
+    "sympy>=1.13.3",
+    "tabula",
+    "twine",
+    "undetected-chromedriver",
+    "utm",
+    "webcolors",
+    "wkhtmltopdf",
     "xlsxwriter"
 ]
 
@@ -89,9 +89,6 @@ docs = [
 "Homepage" = "https://github.com/username/ai-native-traditional-eng"
 "Bug Tracker" = "https://github.com/username/ai-native-traditional-eng/issues"
 "Documentation" = "https://github.com/username/ai-native-traditional-eng#readme"
-
-[tool.setuptools]
-packages = ["src"]
 
 [tool.setuptools.packages.find]
 where = ["."]
