@@ -17,6 +17,33 @@ htmlcov/
 # UV
 .venv/
 
+
+# Removed Windows wrapper files per user request
+hive-mind-prompt-*.txt
+
+# Test artifacts and reports
+test-results/
+test-reports/
+junit.xml
+pytest.xml
+bandit-report.json
+.testmondata
+allure-results/
+coverage.xml
+htmlcov/
+.coverage.*
+
+# Performance test outputs
+.benchmarks/
+benchmark-results/
+
+# Test databases and temporary files
+test_*.db
+test_*.sqlite
+test_*.sqlite3
+*.tmp
+*.temp
+
 # Claude Flow generated files
 .claude/settings.local.json
 .mcp.json
@@ -43,26 +70,3 @@ coordination/orchestration/*
 claude-flow
 # Removed Windows wrapper files per user request
 hive-mind-prompt-*.txt
-
-# Test artifacts and reports
-test-results/
-test-reports/
-junit.xml
-pytest.xml
-bandit-report.json
-.testmondata
-allure-results/
-coverage.xml
-htmlcov/
-.coverage.*
-
-# Performance test outputs
-.benchmarks/
-benchmark-results/
-
-# Test databases and temporary files
-test_*.db
-test_*.sqlite
-test_*.sqlite3
-*.tmp
-*.temp
