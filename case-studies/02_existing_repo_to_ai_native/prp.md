@@ -1,5 +1,8 @@
 Objective:  A clear and organized folder structure for the existing repository
 
+**Bottom line:** GitHub issues are designed to be created through the web interface or API, not as repository files. The templates just make the web form creation process more structured.
+Are you looking for a specific workflow or trying to solve a particular problem with issue management?
+
 - [ ] Reference the existing repository subdirectory files using below markdown snippet
 
   ```markdown
@@ -28,5 +31,6 @@ Objective:  A clear and organized folder structure for the existing repository
 
 - [ ] Manage github issues in the respitory from IDE
   - [ ] create folder structure
-  - [ ] create workflow
-  - [ ] ?
+  - [ ] create workflow to create new issues
+  - [ ] create issue templates
+  - [ ] create issue labels
